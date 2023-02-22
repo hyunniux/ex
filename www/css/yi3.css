@@ -1,0 +1,330 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+}
+body {
+    min-width: 1280px;
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --colorGreen: lightgreen;
+    --colorBlue: skyblue;
+    --colorOrange: #f5ae94;
+    --colorGreenDark: #29532d;
+    --colorBlueDark: #1c4170;
+    --colorOrangeDark: #75331b;
+    --colorWhite: #fff;
+    --colorFontDark: #363636;
+    --colorFontBasic: #979797;
+    --colorFontLight: #cecece;
+    --swiper-theme-color: var(--colorWhite);
+    /* --swiper-navigation-size: 0.8rem; */
+}
+i > span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    text-indent: -100px;
+    overflow: hidden;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+}
+.toto {
+    width: 100%;
+    height: 40px;
+    background: rgb(177, 202, 212);
+    display: flex;
+    justify-content: space-between;
+}
+.toto .left {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0 0 0 40px;
+}
+.toto .right {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0 40px 0 0;
+}
+.toto a:link,
+.toto a:visited {
+    color: #fff;
+    font-size: 0.75rem;
+    color: var(--colorFontlight);
+}
+.toto a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+.toto a:active {
+    color:var(--colorBlueDark)
+}
+.toto a::before {
+    content: "";
+    width: 1px;
+    height: 0.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 0 5px;
+}
+.toto a:first-child::before {
+    display: none;
+}
+.inner {
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav.inner {
+    height: 60px;
+}
+nav.inner a.logo {
+    width: 200px;
+    height: 50px;
+    display: block;
+    text-indent: -500px;
+    overflow: hidden;
+    background: url(/image/hospital/logologo.png) no-repeat 50% 50% / 100%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.nav ul.gnb {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 80px;
+}
+.nav ul.gnb > li {
+    font-size: 1rem;
+    line-height: 1;
+    color: var(--colorFontDark);
+    margin: 0 10px 0 10px;
+    position: relative;
+    white-space: nowrap;
+}
+.nav ul > li > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav ul > li > a:hover {
+    color: var(--colorFontLight);
+}
+.nav ul.gnb ul.sub {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 0;
+    left: 50%;
+    margin-left: -100px;
+    top: 35px;
+    width: 200px;
+    background: #fff;
+}
+.nav ul.gnb li:last-of-type ul.sub {
+    left: auto;
+    right: 0;
+}
+.nav ul.gnb > li > ul.sub > li {
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    height: 0;
+    font-size: 1rem;
+}
+.nav ul.gnb > li > ul.sub::before {
+    content: "";
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 0;
+    top: 100px;
+    left: 0;
+}
+.nav ul.gnb > li:hover > ul.sub > li,
+.nav ul .gnb > li:hover > ul.sub::before {
+    height: 50px;
+    transition: all 0.3s;
+}
+.nav ul.gnb > li:hover > ul.sub::before{
+    background: var(--colorWhite);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.nav > span {
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--colorFontBasic);
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+.nav span:first-of-type {
+    margin: 0;
+}
+section,
+.section {
+    width: 100%;
+    display: flex;
+}
+.sec01 {
+    position: relative;
+    z-index: 50;
+    height: 600px;
+    background: radial-gradient(farthest-side at 98% 98%, #bddbb9, #81c2c2, #477180, rgba(23, 58, 70, 0.25), rgba(34, 66, 77, 0)), radial-gradient(farthest-side at 10% 0%, #7282a0, #71a8be);
+}
+.sec01 .inner {
+    gap: 0 30px;
+    padding: 30px 0;
+}
+.sec01 .inner > div {
+    width: 1440px;
+    height: 100%;
+}
+.sec01 .inner > div > .swiper {
+    width: 100%;
+    height: 100%;
+}
+.sec01 .inner > div > .swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sec03 {
+    height: 400px;
+    display: flex;
+}
+.sec03 > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.sec03 .left {
+    background: #fff;
+    padding: 0 40px 0 0;
+    justify-content: flex-end;
+    color: black;
+}
+.sec03 .right {
+    background: #fff;
+    padding: 0 0 0 40px;
+    justify-content: flex-start;
+}
+.sec03 .halfinner {
+    width: 500px;
+    height: inherit;
+    padding: 30px 0;
+}
+.sec03 .halfinner h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.sec03 .halfinner ul {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec03 .halfinner ul li {
+    padding: 0 0 0 15px;
+    position: relative;
+}
+.sec03 .halfinner ul li::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%);
+}
+.sec03 .halfinner ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec03 .left a {
+    color: black;
+}
+.sec03 .right a {
+    color: black;
+}
+ec04 {
+    height: 40px;
+    background: #fff;
+    display: flex;
+}
+.sec04 .site {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid lightblue; */
+    background: transparent;
+    padding: 5px 150px;
+    gap: 50px;
+}
+footer {
+    background: lightgray;
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+footer:first-of-type {
+    border-bottom: 1px solid lightgray;
+}
+footer:last-of-type {
+    border-top: 1px solid lightgray;
+}
+footer select {
+    width: 300px;
+    height: 50px;
+    border: 1px solid var(--colorFontBasic);
+    background: transparent;
+    color: var(--colorFontDark);
+    padding: 10px 20px;
+}
+footer .copyright a:link,
+footer .copyright a:visited {
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: var(--colorFontBasic);
+    font-weight: 600;
+    margin: 0 20px 0 0;
+}
+footer address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    color: var(--colorFontBasic);
+}

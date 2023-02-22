@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+    letter-spacing: -0.05rem;
+}
+:root {
+    font-family: 'Noto Sans KR', sans-serif;
+    --colorBlack: #000;
+    --colorEEE: #eee;
+    --colorEEELight: #e8e8e8;
+    --colorGreyBasic: #666;
+    --colorGreyLight: #969696;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style-type: none;
+}
+h1 {
+    height: 280px;
+    font-size: 2.625rem;
+    line-height: 1;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 60px;
+    background: url(/image/kakao/ico_tit_culture.gif) no-repeat -5px 50% / 64px 64px;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+nav {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+nav a.logo {
+    width: 100px;
+    height: 22px;
+    text-indent: -200px;
+    overflow: hidden;
+    background: url(/image/kakao/img_logo.png) no-repeat 50% 50% / cover;
+}

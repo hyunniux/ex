@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+header .inner {
+    width: 1180px;
+    height: 120px;
+    margin: 0px auto;
+    position: relative;
+}
+header .inner h1 {
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+header .inner h1 a {
+    font: bold 24px; 
+    color: skyblue;
+}
+header .inner .util {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+header .inner .util li {
+    float: left;
+}
+header .inner .util li a {
+    display: block;
+    font: 300;
+    color: pink;
+    padding: 0px 10px;
+}
+header .inner #gnb {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+header .inner #gnb li {
+    float: left;
+}
+header .inner #gnb li a {
+    display: block;
+    font: 100 10px;
+    color: orange;
+    padding: 20px 40px;
+    transition: all 0.5s;
+}
+header .inner #gnb li a:hover {
+    background: #555;
+    color: #fff;
+}
+section {
+    width: 100%;
+    height: 725px;
+    background: #555;
+    position: relative;
+    overflow: hidden;
+    padding: 0 100px;
+}
+section .inner {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    background: url(/image/hospital/Frame\ 193.png);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+/* section .inner h1 {
+    font: 300 60px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+section .inner p {
+    font: 100 20px;
+    color: #fff;
+    margin-bottom: 60px;
+} */
+.card {
+    width: 100%;
+    height: 725px;
+    padding: 20px 0;
+}
+.card .swiper-wrapper {
+    width: 100%;
+    height: 725px;
+    background: url(/image/hospital/Frame\ 193.png) no-repeat;
+    flex: none;
+}
+.card .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    p
+}
+.card .swiper-slide >span {
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 73px;
+    color: #fff;
+    flex: none;
+    margin: 0 0 0 0;
+}
+.card .swiper-slide >h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: #fff;
+    flex: none;
+    order: 1;
+}

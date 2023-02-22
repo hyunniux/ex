@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Noto Sans KR' , sans-serif;
+    font-size: 14px;
+}
+ul, li { list-style: none; }
+a { text-decoration: none; }
+body { min-width: 1440px; }
+.inner {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 0px;
+}
+header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner .logo {
+    position: relative;
+    margin: 0 55px 0 0;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    text-indent: -100px;
+    overflow: hidden;
+    background: url(/image/hospital/logo.jpg) no-repeat 0 0 / contain;
+}
+header .inner ul {
+    position: absolute;
+    left: 400px;
+    bottom: 0;
+}
+/* header .inner ul a {
+    font: 100;
+    color: green;
+} */
+header .inner .util {
+    position: absolute;
+    left: 1500px;
+    bottom: 85px;
+}
+header .inner .util li {
+    float: left;
+}
+header .inner .util li a {
+    display: block;
+    font: 200;
+    color: orange;
+    padding: 0 10px;
+}
+header .inner #gnb {
+    position: absolute;
+    bottom: 65px;
+    right: 165px;
+}
+header .inner #gnb li {
+    float: left;
+}
+header .inner #gnb li a {
+    display: block;
+    font: 100;
+    color: gray;
+    padding: 20px 40px;
+    transition: all 0.5s;
+}
+header .inner #gnb li a:hover {
+    background: yellow;
+    color: purple;
+}
+figure {
+    width: 1440px;
+    height: 700px;
+    background: url(/image/hospital/Frame\ 193.png) no-repeat 50% 50% / cover;
+    position: relative; 
+    overflow: hidden;
+    padding: 0;
+}
+figure .inner {
+    width: 1440px;
+    margin: 50px 0 0 0;
+    position: relative;
+}
+figure .inner h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    color: #fff;
+    flex-direction: column;
+}
+figure .inner p {
+    font: 100;
+    color: aqua;
+    margin-bottom: 30px;
+}
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section .article {
+    width: 430px;
+    height: 557px;
+    background-color: skyblue;
+    display: flex;
+}
+article:nth-of-type(1) {
+    text-align: center;
+    width: 430px;
+    height: 557px;
+    background-color: lightblue;
+    padding: 50px 0 0 0;
+}
+article:nth-of-type(2) {
+    text-align: center;
+    width: 430px;
+    height: 557px;
+    background-color: skyblue;
+    padding: 50px 0 0 0;
+}
+article:nth-of-type(3) {
+    text-align: center;
+    width: 430px;
+    height: 557px;
+    background-color: skyblue;
+    padding: 50px 0 0 0;
+}
+footer {
+    width: 100%;
+    height: 167px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    background: lightgray;
+    padding: 25px 50px 20px;
+    border-top: 1px solid black;
+}
+footer .inner {
+    width: 100%;
+    margin: 0px auto;
+}
+footer .inner .upper {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+footer .inner .upper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+footer .inner .upper h1 {
+    float: left;
+    font: 100;
+    color: black;
+}
+footer .inner .upper ul {
+    float: left;
+}
+footer .inner .upper ul li {
+    float: left;
+    margin-left: 20px;
+}
+footer .inner .upper ul li a {
+    font: bold;
+    color: black;
+}
+footer .inner .lower {
+    width: 100%;
+    padding-top: 20px;
+}
+footer .inner .lower address {
+    width: 100%;
+    font:100;
+    color: black;
+    margin-bottom: 20px;
+}
+footer .inner .lower p {
+    width: 100%;
+    color: black;
+}
